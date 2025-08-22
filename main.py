@@ -1,4 +1,3 @@
-
 senha_correta = 123456
 valor_disponivel = 5000
 
@@ -18,8 +17,8 @@ def caixa_eletronico():
         print("\n--- CAIXA ELETRONICO ---")
         print("[0] SAQUE")
         print("[1] DEPOSITO")
-        print("[3] CONSULTA A SALDO")
-        print("[4] SAIR")
+        print("[2] CONSULTA A SALDO")
+        print("[3] SAIR")
 
         opcao = input("EScolha uma opção: ")
         if opcao == "0":
@@ -34,11 +33,17 @@ def caixa_eletronico():
                 if recibo.upper() == "S":
                     print("Imprimindo recibo")
                 print("Operação finalizada")
-
         elif opcao == "1":
-            print(f"Saldo atual R$: {valor_disponivel}")
+            valor_deposito = int(input("Digite o valor do depósito: "))
+            valor_disponivel += valor_deposito
+            print(f"Depósito realizado. Saldo atual é: {valor_disponivel}")
+        elif opcao == "3":
+            print(f"O seu saldo é de {valor_disponivel}")
+        elif opcao == "3":
+            print("Obrigado, volte sempre!")
+            break
+        else:
+            print("Opção invalida. Tente novamente!")
         
-   
-        
-
+caixa_eletronico()
 
