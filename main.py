@@ -1,4 +1,4 @@
-senha_correta = 123456
+senha_correta = 123456 #aqui foi definido uma senha correta
 valor_disponivel = 5000
 
 def caixa_eletronico():
