@@ -38,7 +38,7 @@ def caixa_eletronico():
             valor_deposito = int(input("Digite o valor do depósito: "))
             valor_disponivel += valor_deposito
             print(f"Depósito realizado. Saldo atual é: {valor_disponivel}")
-        elif opcao == "3":
+        elif opcao == "2":
             print(f"O seu saldo é de {valor_disponivel}")
         elif opcao == "3":
             print("Obrigado, volte sempre!")
