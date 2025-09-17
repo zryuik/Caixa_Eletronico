@@ -8,8 +8,9 @@ def caixa_eletronico():
     senha_digitada = int(input("Digite sua senha: "))
 
     if senha_digitada != senha_correta:
-        print("Senha incorreta ")
-        print("Finalizando o sistema ")
+        print("Senha incorreta...")
+        print("Finalizando o sistema...")
+        return
     else:
         print("Senha correta ")
 
@@ -20,7 +21,7 @@ def caixa_eletronico():
         print("[2] CONSULTA A SALDO")
         print("[3] SAIR")
 
-        opcao = input("EScolha uma opção: ")
+        opcao = input("Escolha uma opção: ")
         if opcao == "0":
             valor_escolhido = int(input("Digite o valor: "))
             if valor_escolhido > valor_disponivel:
