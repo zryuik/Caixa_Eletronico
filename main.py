@@ -1,5 +1,5 @@
 senha_correta = 123456 #aqui foi definido uma senha correta
-valor_disponivel = 5000
+valor_disponivel = 5000#valor quem tem em caixa
 
 def caixa_eletronico():
     global valor_disponivel
