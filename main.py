@@ -1,6 +1,7 @@
 senha_correta = 123456 #aqui foi definido uma senha correta
 valor_disponivel = 5000#valor quem tem em caixa
-#
+#proximo passo e integrar um cadastramento de usuarios
+
 def caixa_eletronico():
     global valor_disponivel
     
